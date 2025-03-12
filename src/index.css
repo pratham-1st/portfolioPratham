@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'outfit';
+}
+
+body{
+  height: 100vh;
+  background-color: #161513;
+  color: white;
+}
