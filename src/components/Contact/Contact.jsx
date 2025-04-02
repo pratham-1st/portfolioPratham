@@ -4,6 +4,7 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
 
@@ -26,9 +27,11 @@ const Contact = () => {
         if (data.success) {
           setResult("Form Submitted Successfully");
           event.target.reset();
+          toast.success("Message Sent Successfully")
         } else {
           console.log("Error", data);
           setResult(data.message);
+          toast.error("Error Occurred!!")
         }
       };
 
